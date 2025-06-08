@@ -1,106 +1,105 @@
-# 🔥 Detector de Fogo – Projeto Educacional
+# 🔥 Fire Detector – Educational Project
 
-Um sistema web que utiliza **visão computacional** para identificar sinais de fogo em tempo real via **webcam**, com intuito de conscientizar sobre o uso da tecnologia no **combate às queimadas** e **crises climáticas**. Desenvolvido como projeto social e educacional com foco em impacto social e sustentabilidade.
+A web system that uses **computer vision** to detect fire in real time via **webcam**. The goal is to raise awareness about the use of technology in **fighting wildfires** and **climate crises**. Built as a social and educational project to demonstrate the power of tech for good.
 
-## 📸 Demonstração
+## 📸 Demo
 
 ![Dashboard](./src/assets/screenshots/dashboard.png)
-![Detecção](./src/assets/screenshots/detection.png)
+![Detection](./src/assets/screenshots/detection.png)
 
 ---
 
-## 🧠 Objetivos
+## 🧠 Objectives
 
-- Mostrar na prática como a **tecnologia pode salvar vidas** e preservar o meio ambiente.
-- Ensinar alunos sobre **machine learning, visão computacional e front-end moderno**.
-- Desenvolver uma solução simples, mas funcional, de **detecção de incêndios**.
-- Criar uma **interface intuitiva** com alertas visuais e possibilidade de expansão futura.
+- Demonstrate how **technology can save lives** and protect nature.
+- Teach students about **machine learning, computer vision, and front-end tools**.
+- Create a simple but functional solution for **fire detection**.
+- Build an **intuitive interface** with visual alerts and future scalability.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 🛠 Technologies Used
 
 ### Front-End
 
 - ⚛️ [React.js](https://react.dev/)
 - ⚡ [Vite](https://vitejs.dev/)
-- 🎨 CSS Modules (responsivo)
-- 📊 [Recharts](https://recharts.org/) (gráficos)
-- 🎥 getUserMedia (webcam nativa)
+- 🎨 CSS Modules (responsive)
+- 📊 [Recharts](https://recharts.org/) (charts)
+- 🎥 getUserMedia (native webcam)
 - 📦 React Router DOM
 
 ### Back-End
 
 - 🌐 [Node.js](https://nodejs.org/)
 - 🔒 [Express](https://expressjs.com/)
-- 🧠 Autenticação com token (JWT em breve)
-- 🔒 Validação de credenciais
+- 🧠 Authentication system (JWT coming soon)
+- 📦 Credential validation and local storage
 
 ---
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-| Página             | Descrição                                                                 |
-|--------------------|--------------------------------------------------------------------------|
-| 🔐 Login            | Autenticação com e-mail e senha                                          |
-| 📝 Cadastro         | Registro de novos usuários                                               |
-| 📊 Dashboard        | Visualização de dados de detecção e gráficos informativos                |
-| 🔍 Detecção de Fogo | Acesso à câmera, análise de imagem via filtro RGB, e alerta visual       |
-| 📁 Exportação       | (Em breve) Download de registros de ocorrências                          |
-| ✉️ Notificações     | (Em breve) Envio de alertas por e-mail                                   |
-| 📱 Responsivo       | Layout adaptado para celular, tablet e desktop                           |
-| 🌓 Modo Claro/Escuro| (Em breve) Alternância de tema pela interface                            |
+| Page            | Description                                                           |
+|-----------------|-----------------------------------------------------------------------|
+| 🔐 Login         | Email and password authentication                                     |
+| 📝 Register      | Register new users                                                   |
+| 📊 Dashboard     | Data and statistics on detection with interactive charts             |
+| 🔍 Fire Detection| Webcam access, RGB image analysis, and real-time visual alert        |
+| 📁 Export        | (Coming soon) Download of incident logs                              |
+| ✉️ Notifications | (Coming soon) Email alert system                                     |
+| 📱 Responsive    | Mobile, tablet, and desktop friendly                                 |
+| 🌓 Dark/Light Mode | (Coming soon) Toggle theme from UI                                 |
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 detector-fogo/
 ├── public/
 │   └── index.html
 ├── backend/
-│   ├── index.js            # Servidor Express (API)
-│   └── db/                 # Banco simulado ou Mongo futuramente
+│   ├── index.js          # Express API
+│   └── db/               # In-memory or future MongoDB
 ├── src/
 │   ├── assets/
 │   ├── components/
-│   │   ├── common/         # Botões, Inputs, etc.
-│   │   └── layout/         # Header, Sidebar, etc.
+│   │   ├── common/       # Buttons, inputs, etc.
+│   │   └── layout/       # Header, Sidebar
 │   ├── pages/
 │   │   ├── LoginPage/
 │   │   ├── RegisterPage/
 │   │   ├── DashboardPage/
 │   │   └── DetectorPage/
-│   ├── services/           # API helpers
-│   ├── styles/             # Global.css etc.
+│   ├── services/         # API helpers
+│   ├── styles/           # Global styles
 │   ├── App.jsx
 │   └── main.jsx
 ├── package.json
-└── README.md               # Este arquivo
+└── README.md             # This file
 
 ---
 
-# 🧪 Como Rodar o Projeto Localmente
+## 🧪 How to Run Locally 
 
-# Clonar o repositório
-git clone https://github.com/seuusuario/detector-fogo.git
+# Clone the repository
+git clone https://github.com/yourusername/detector-fogo.git
 
-# Acessar o diretório
+# Enter the directory
 cd detector-fogo
 
-# Instalar dependências
+# Install dependencies
 npm install
 
-# Rodar o projeto
+# Run the app
 npm run dev
 
-# Entrar na pasta backend
+# Enter backend folder
 cd backend
 
-# Instalar dependências
+# Install dependencies
 npm install
 
-# Rodar a API
+# Run the API
 node index.js
-
 
