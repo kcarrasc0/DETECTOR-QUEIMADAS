@@ -1,105 +1,90 @@
-# 🔥 Fire Detector – Educational Project
+# 🔥 FireVision Web App – Climate Awareness through Technology
 
-A web system that uses **computer vision** to detect fire in real time via **webcam**. The goal is to raise awareness about the use of technology in **fighting wildfires** and **climate crises**. Built as a social and educational project to demonstrate the power of tech for good.
-
-## 📸 Demo
-
-![Dashboard](./src/assets/screenshots/dashboard.png)
-![Detection](./src/assets/screenshots/detection.png)
+A web-based application that uses **computer vision** to detect fire via webcam in real time. This educational project promotes awareness about the use of **AI and software** in addressing **wildfire risks** and **climate emergencies**. Built as a full-stack solution to demonstrate how technology can drive **social and environmental impact**.
 
 ---
 
-## 🧠 Objectives
+## 🎯 Project Goals
 
-- Demonstrate how **technology can save lives** and protect nature.
-- Teach students about **machine learning, computer vision, and front-end tools**.
-- Create a simple but functional solution for **fire detection**.
-- Build an **intuitive interface** with visual alerts and future scalability.
+- 🧠 Educate students about **AI**, **machine learning**, and **web development**
+- 🔥 Show how software can **monitor environmental risks**, such as wildfires
+- 🌱 Inspire climate awareness and **tech-for-good** initiatives
+- 🎨 Provide a simple, accessible, and **user-friendly interface**
 
 ---
 
-## 🛠 Technologies Used
+## 🚀 Main Features
+
+| Feature           | Description                                                               |
+|------------------|---------------------------------------------------------------------------|
+| 🔐 Login/Register | Basic authentication system for user access                              |
+| 📊 Dashboard      | Displays usage stats and visual charts with [Recharts](https://recharts.org/) |
+| 🎥 Fire Detection | Real-time fire detection via webcam (RGB and pixel analysis)             |
+| 📨 Notifications  | (Coming soon) Email alerts for incidents                                 |
+| 📁 Export         | (Coming soon) Export logs of detection history                           |
+| 📱 Responsive UI  | Fully optimized for mobile, tablet, and desktop                          |
+| 🌓 Dark Mode      | (Coming soon) Theme toggle button                                        |
+
+---
+
+## 🧪 Tech Stack
 
 ### Front-End
 
-- ⚛️ [React.js](https://react.dev/)
-- ⚡ [Vite](https://vitejs.dev/)
-- 🎨 CSS Modules (responsive)
-- 📊 [Recharts](https://recharts.org/) (charts)
-- 🎥 getUserMedia (native webcam)
-- 📦 React Router DOM
+- ⚛️ [React.js](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- 🎨 CSS Modules for responsive design
+- 📊 [Recharts](https://recharts.org/) for data visualization
+- 🎥 `getUserMedia()` for webcam access
+- 🔄 React Router DOM for SPA navigation
 
 ### Back-End
 
 - 🌐 [Node.js](https://nodejs.org/)
-- 🔒 [Express](https://expressjs.com/)
-- 🧠 Authentication system (JWT coming soon)
-- 📦 Credential validation and local storage
+- 🧩 [Express](https://expressjs.com/)
+- 🛡️ (Planned) JWT authentication
+- 📦 In-memory data for simulation (MongoDB optional)
 
 ---
 
-## 🚀 Features
+## 💾 Installation Guide
 
-| Page            | Description                                                           |
-|-----------------|-----------------------------------------------------------------------|
-| 🔐 Login         | Email and password authentication                                     |
-| 📝 Register      | Register new users                                                   |
-| 📊 Dashboard     | Data and statistics on detection with interactive charts             |
-| 🔍 Fire Detection| Webcam access, RGB image analysis, and real-time visual alert        |
-| 📁 Export        | (Coming soon) Download of incident logs                              |
-| ✉️ Notifications | (Coming soon) Email alert system                                     |
-| 📱 Responsive    | Mobile, tablet, and desktop friendly                                 |
-| 🌓 Dark/Light Mode | (Coming soon) Toggle theme from UI                                 |
+### 📍 Requirements
 
----
+- Node.js ≥ 16
+- npm or yarn
+- Modern browser with webcam access
 
-## 📁 Project Structure
+### 🔧 Setup Instructions
 
-detector-fogo/
-├── public/
-│   └── index.html
-├── backend/
-│   ├── index.js          # Express API
-│   └── db/               # In-memory or future MongoDB
-├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── common/       # Buttons, inputs, etc.
-│   │   └── layout/       # Header, Sidebar
-│   ├── pages/
-│   │   ├── LoginPage/
-│   │   ├── RegisterPage/
-│   │   ├── DashboardPage/
-│   │   └── DetectorPage/
-│   ├── services/         # API helpers
-│   ├── styles/           # Global styles
-│   ├── App.jsx
-│   └── main.jsx
-├── package.json
-└── README.md             # This file
 
----
+# Clone the repository - Git Bash Here
+git clone https://github.com/yourusername/firevision-webapp.git
 
-## 🧪 How to Run Locally 
+# Navigate to project folder
+cd firevision-webapp
 
-# Clone the repository
-git clone https://github.com/yourusername/detector-fogo.git
-
-# Enter the directory
-cd detector-fogo
-
-# Install dependencies
+# Install front-end dependencies
 npm install
 
-# Run the app
+# Run front-end
 npm run dev
 
-# Enter backend folder
+# In another terminal tab
 cd backend
-
-# Install dependencies
 npm install
-
-# Run the API
 node index.js
+
+firevision-webapp/
+├── backend/              # Express API
+│   └── index.js
+├── src/                  # Front-end
+│   ├── pages/
+│   ├── components/
+│   ├── services/
+│   ├── styles/
+│   └── App.jsx
+├── public/
+├── package.json
+└── README.md
+
 
