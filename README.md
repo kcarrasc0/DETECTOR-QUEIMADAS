@@ -57,19 +57,19 @@ A web-based application that uses **computer vision** to detect fire via webcam 
 ### 🔧 Setup Instructions
 
 
-# Clone the repository - Git Bash Here
+### Clone the repository - Git Bash Here
 git clone https://github.com/yourusername/firevision-webapp.git
 
-# Navigate to project folder
+### Navigate to project folder
 cd firevision-webapp
 
-# Install front-end dependencies
+### Install front-end dependencies
 npm install
 
-# Run front-end
+### Run front-end
 npm run dev
 
-# In another terminal tab
+### In another terminal tab
 cd backend
 npm install
 node index.js
@@ -87,4 +87,38 @@ firevision-webapp/
 ├── package.json
 └── README.md
 
+## 🔍 API Reference
+
+| Method | Route         | Description                          |
+|--------|---------------|--------------------------------------|
+| GET    | /detections   | Returns list of all fire events      |
+| POST   | /detections   | Sends new fire detection entry       |
+| GET    | /users        | Returns registered users             |
+| POST   | /login        | Authenticates user login             |
+| POST   | /register     | Creates a new user account           |
+
+---
+
+## 🤝 Contribution Guide
+
+Want to improve **FireVision**? Here's how:
+
+1. **Fork** the repository
+2. **Create a new branch**  
+   git checkout -b feature/your-feature-name
+
+### Commit your changes
+git commit -m "Add your message"
+
+### Push to your branch
+git push origin feature/your-feature-name
+
+---
+
+```markdown
+## 🌍 License
+
+This project was developed for **educational and awareness purposes only**.  
+You are free to use, modify, and distribute it for **non-commercial goals** that promote social or environmental impact.  
+Let’s build a better future with technology. 🌱🔥
 
