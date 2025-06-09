@@ -75,9 +75,9 @@ npm install
 node index.js
 
 firevision-webapp/
-├── backend/              # Express API
+├── backend/              
 │   └── index.js
-├── src/                  # Front-end
+├── src/                 
 │   ├── pages/
 │   ├── components/
 │   ├── services/
@@ -115,7 +115,6 @@ git push origin feature/your-feature-name
 
 ---
 
-```markdown
 ## 🌍 License
 
 This project was developed for **educational and awareness purposes only**.  
